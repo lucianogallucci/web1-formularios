@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1><strong>FORMULARIO</strong></h1>
+    <form action="index.js" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="apellido">apellido</label>
+        <input type="text" name="apellido" id="apellido">
+        <label for="email">email</label>
+        <input type="email" name="email" id="email">
+        <label for="contraseña">contraseña</label>
+        <input type="password" name="contraseña" id="contraseña">
+        <label for="edad">edad</label>
+        <input type="number" name="edad" id="edad " min="0" max="120" required>
+        <!--Ingreso de mucho texto-->
+        <label for="mensaje">Ingrese un mensaje</label>
+        <textarea name="mensaje" id="mensaje" cols="40" rows="10"></textarea>
+        <!--lista de opciones-->
+        <label for="escuderia">Escuderias</label>
+        <select name="escuderia" id="escuderia">
+        <option value="">Elegir...</option>
+        <option value="ferrari">Ferrari</option>
+        <option value="mclaren">McLaren</option>
+        <option value="hass">Hass</option>
+        </select>
+        <!--Submit-->
+        <input type="submit" value="Enviar">
+        <p>1-¿Qué atributo se utiliza para especificar la URL a la que se enviarán los datos del formulario? 1b</p>
+        <p>2-¿Cuál es el atributo que se utiliza para especificar el tipo de datos que se espera en un campo de entrada? 2c</p>
+        <p>3-¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar direcciones de correo electrónico? 3b</p>
+        <p>4-¿Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo con un campo de entrada en un formulario? 4d</p>
+        <p>5-¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario? 5a</p>
+        <p>6-¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un formulario? 6a</p>
+        <p>7-¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario? 7c</p>
+        <p>8-¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido? 8a</p>
+        <p>9-¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario? 9a</p>
+        <p>10-estos métodos de solicitud a veces son llamados HTTP verbs. Cada uno de ellos implementan una semántica diferente,<br>
+        pero algunas características similares son compartidas por un grupo de ellos: <br>El método GET solicita una representación
+        de un recurso específico.El método HEAD pide una respuesta idéntica a la de una petición GET,
+        pero sin el cuerpo de la respuesta. <br>El método POST se utiliza para enviar una entidad a un recurso en específico, causando a
+        menudo un cambio en el estado o efectos secundarios en el servidor. <br>El modo PUT reemplaza todas las representaciones actuales
+        del recurso de destino con la carga útil de la petición. <br>El método DELETE borra un recurso en específico. <br>El método CONNECT 
+        establece un túnel hacia el servidor identificado por el recurso. <br>El método OPTIONS es utilizado para describir las opciones de 
+        comunicación para el recurso de destino. <br>El método TRACE realiza una prueba de bucle de retorno de mensaje a lo largo de la ruta 
+        al recurso de destino. <br>El método PATCH es utilizado para aplicar modificaciones parciales a un recurso.</p>
+        <table>
+            <tr>
+                <th>Respuestas informativas (100–199)</th>
+            </tr>
+            <tr>
+                <th>Respuestas satisfactorias (200–299)</th>
+            </tr>
+            <tr>
+                <th>Redirecciones (300–399)</th>
+            </tr>
+            <tr>
+                <th>Errores de los clientes (400–499)</th>
+            </tr>
+            <tr>
+                <th>y errores de los servidores (500–599)</th>
+            </tr>
+        </table>
+        
+        <form action=""method="post">
+            <!--agrupamiento de datos-->
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" value="" required>
+                <label for="apellido">apellido</label>
+                <input type="text" name="apellido" id="apellido" value=""required>
+            </fieldset>
+        </form>
+</body>
+
+</html>
